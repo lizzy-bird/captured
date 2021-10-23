@@ -1,6 +1,66 @@
 @import 'setup';
-@import 'header';
-@import 'footer';
 @import 'mixins';
 @import 'variables';
-@import 'typograhy';
+@import 'header';
+@import 'footer';
+
+/*General Styles*/
+
+html{
+    font-size:62.5%;
+}
+
+.wrapper{
+    max-width:1250px;
+    margin:0 auto;
+}
+
+img{
+    background-color:$accent-color
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color:#2c2c2c;
+    font-size:2rem;
+    line-height:3.2rem;
+}
+
+h1 {@include heading(13.8rem, 800);}
+h2 {@include heading(8rem, 600);}
+h3 {@include heading(4.2rem, 600);}
+h4 {@include heading(3.2rem, 400);}
+
+/*Home Page Styles*/
+
+// About Section //
+.about{
+    background-color:$primary-color;
+}
+
+// More Info Section //
+.more-info{
+    background-color:$secondary-color;
+}
+
+//Home Banner//
+
+.home-banner{
+    background-image:url(../images/banner.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:500px;
+    width:100%;
+}
+
+// Gallery Section //
+
+.gallery ul{
+    list-style:none;
+    display:flex;
+
+    li{
+        padding:10px;
+    }
+}

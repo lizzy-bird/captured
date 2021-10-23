@@ -1,0 +1,16 @@
+@mixin heading($size-value, $font-weight) {
+    font-size: $size-value;
+    color: #2C2C2C;
+    font-family: 'Playfair Display', serif;
+    font-weight: $font-weight;
+    text-transform:uppercase;
+  }
+
+@mixin button{
+    font-size: 2rem;
+    line-height:3.2rem;
+    letter-spacing: 1px;
+    background-color: $button-color;
+    color:#2C2C2C;
+    text-transform:uppercase;
+}

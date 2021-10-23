@@ -235,6 +235,121 @@ html {
   overflow: hidden;
 }
 
+/*Colors*/
+/*ice*/
+/*white*/
+/*canary*/
+/*sea green*/
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-family: "playfair display", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav ul li {
+  padding: 10px 40px;
+}
+nav ul a {
+  text-decoration: none;
+  color: #2f2f2f;
+  text-transform: uppercase;
+}
+nav ul a:hover, nav ul a:focus, nav ul a:focus-within {
+  border-bottom: 5px solid #4CEEA7;
+}
+
+footer {
+  background-color: #2C2C2C;
+  text-align: center;
+}
+footer p {
+  color: #FAFAFA;
+  font-size: 1.4rem;
+}
+
+/*General Styles*/
+html {
+  font-size: 62.5%;
+}
+
 .wrapper {
   max-width: 1250px;
+  margin: 0 auto;
+}
+
+img {
+  background-color: #FDFA69;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+h1 {
+  font-size: 13.8rem;
+  color: #2C2C2C;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 8rem;
+  color: #2C2C2C;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 4.2rem;
+  color: #2C2C2C;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 3.2rem;
+  color: #2C2C2C;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*Home Page Styles*/
+.about {
+  background-color: #EFFDF3;
+}
+
+.more-info {
+  background-color: #FAFAFA;
+}
+
+.home-banner {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+}
+
+.gallery ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery ul li {
+  padding: 10px;
 }

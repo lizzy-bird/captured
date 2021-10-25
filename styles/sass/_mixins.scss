@@ -6,11 +6,15 @@
     text-transform:uppercase;
   }
 
-@mixin button{
+@mixin button-style{
     font-size: 2rem;
+    font-family:'Playfair Display', serif;
+    font-weight:600;
     line-height:3.2rem;
     letter-spacing: 1px;
-    background-color: $button-color;
+    background-color: #4CEEA7;
     color:#2C2C2C;
     text-transform:uppercase;
+    padding:15px 30px;
+    border:none;
 }

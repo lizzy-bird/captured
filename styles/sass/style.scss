@@ -26,8 +26,8 @@ p{
     line-height:3.2rem;
 }
 
-h1 {@include heading(13.8rem, 800);}
-h2 {@include heading(8rem, 600);}
+h1 {@include heading(15rem, 800);}
+h2 {@include heading(5rem, 600);}
 h3 {@include heading(4.2rem, 600);}
 h4 {@include heading(3.2rem, 400);}
 
@@ -36,6 +36,27 @@ h4 {@include heading(3.2rem, 400);}
 // About Section //
 .about{
     background-color:$primary-color;
+    padding-top:200px;
+    padding-bottom:200px;
+    width:100%;
+    
+    h2{
+        text-align:center;
+        margin-bottom:0;
+    }
+
+    p{
+        padding:20px 200px;
+    }
+
+    button{
+        
+        
+        
+        display:block;
+        margin:0px auto;
+        @include button-style;
+    }
 }
 
 // More Info Section //
@@ -59,8 +80,10 @@ h4 {@include heading(3.2rem, 400);}
 .gallery ul{
     list-style:none;
     display:flex;
+    
 
     li{
         padding:10px;
     }
 }
+

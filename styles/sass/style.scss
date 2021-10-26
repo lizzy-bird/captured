@@ -9,10 +9,15 @@
 html{
     font-size:62.5%;
 }
+body{
+    margin: 0 auto;
+    max-width:1500px;
+}
 
 .wrapper{
-    max-width:1250px;
+    
     margin:0 auto;
+    padding:0 100px
 }
 
 img{
@@ -24,6 +29,16 @@ p{
     color:#2c2c2c;
     font-size:2rem;
     line-height:3.2rem;
+}
+
+button{
+    display:block;
+    @include button-style;
+}
+
+a{
+    text-decoration:none;
+    color:#2c2c2c;
 }
 
 h1 {@include heading(15rem, 800);}
@@ -50,18 +65,115 @@ h4 {@include heading(3.2rem, 400);}
     }
 
     button{
-        
-        
-        
-        display:block;
         margin:0px auto;
-        @include button-style;
     }
+
 }
 
 // More Info Section //
+
 .more-info{
     background-color:$secondary-color;
+}
+
+
+.mi-text{
+    padding:50px;
+    width:50%;
+
+    h3{
+        text-align:center;
+    }
+
+    
+}
+
+.new-gear,
+.unlock{
+    margin:0 auto;
+    width:100%;
+    display:flex;
+
+    img{
+        width:50%;
+        position:relative;
+    }
+}
+
+.unlock img{
+    top:-50px;
+    box-shadow: 30px 30px #FDFA69;
+    margin-right:100px;
+    
+}
+
+.new-gear img{
+    bottom: -30px;
+    box-shadow: -30px 30px #FDFA69;
+    margin-left:100px;
+}
+
+.unlock {
+
+    h3{
+        text-align:left;
+    }
+
+    p{
+        margin-right:50px;
+    }
+
+}
+
+.new-gear{
+
+    h3, p{
+        text-align:right;
+        margin-left:50px;
+    }
+    
+    button{
+        margin-left:407px;
+    }
+}
+
+//Links//
+
+.links{
+    display:flex;
+    flex-wrap:wrap;
+    padding-top:100px;
+    padding-bottom:50px;
+    background-color:$primary-color;
+}
+
+.links-text{
+    width:50%;
+    padding:50px 50px 0 0;
+    display:flex;
+    flex-wrap:wrap;
+
+    span{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        background-color: $button-color;
+        height:60px;
+        width:60px;
+        border-radius:100%;
+    }
+    i{
+        font-size:3rem;
+        
+    }
+
+    h3{
+        margin:0;
+        padding-left:30px;
+    }
+    p{
+        padding-left:90px;
+    }
 }
 
 //Home Banner//
@@ -75,15 +187,39 @@ h4 {@include heading(3.2rem, 400);}
     width:100%;
 }
 
-// Gallery Section //
+//Profile Section//
 
-.gallery ul{
-    list-style:none;
-    display:flex;
-    
+.profile{
+    padding: 50px 50px;
+    background-color:$primary-color;
 
-    li{
-        padding:10px;
+    img{
+        box-shadow: 30px 30px #FDFA69; 
+        margin-left:50px;
+        display:inline-block;
     }
+
 }
 
+.profile-text{
+    padding-left:100px;
+    width:67%;
+    display:inline-block;
+}
+
+// Gallery Section //
+
+.gallery {
+    background-color:$secondary-color;
+    margin:0 auto;
+    padding:100px;
+
+    ul{
+        list-style:none;
+        display:flex;
+        margin-top:0;
+        justify-content:space-between;
+        padding-left:0;
+    }
+
+}

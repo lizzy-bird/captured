@@ -6,6 +6,7 @@ nav ul{
     font-weight:600;
     justify-content:flex-end;
     margin-top:0;
+    padding-top:35px;
 
     li{
         padding:10px 40px;
@@ -29,7 +30,6 @@ nav ul{
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-    padding-top:35px;
     height:800px;
     width:100%;
     position:relative;
@@ -49,5 +49,45 @@ nav ul{
         z-index: 10;
         bottom:0;
         right:25%;
+    }
+}
+
+.blog-header{
+    background-image:url(../images/blog-header.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:600px;
+
+    h2{
+        text-align:center;
+        padding-top:100px;
+    }
+}
+
+.contact-header{
+    background-image:url(../images/contact-header.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:600px;
+
+    h2{
+        text-align:center;
+        padding-top:100px;
+    }
+}
+
+.about-header{
+    background-image:url(../images/about-header.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:600px;
+
+    h2{
+        text-align:center;
+        padding-top:100px;
+        margin-left:200px;
     }
 }

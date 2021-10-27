@@ -12,8 +12,8 @@
     <title>CONTACT</title>
 </head>
 <body>
-    <header class="contact-header wrapper">
-        <nav class="header-nav ">
+    <header class="contact-header">
+        <nav class="header-nav wrapper">
             <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="about.html">about</a></li>
@@ -21,13 +21,14 @@
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
+        <h2>Get in Touch</h2>
     </header>
-    <main>
+    <main class="contact-main">
         <aside>
             <ul>
                 <li><i class="fab fa-facebook-f"></i></li>
                 <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
                 <li><i class="fab fa-whatsapp"></i></li>
             </ul>
             <h4>info@email.com</h4>
@@ -37,11 +38,15 @@
             <p>M5V 2D5</p>
         </aside>
 
-        <form action="">
-            <input type="text" name="" id="">
-            <input type="email" name="" id="">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button><a href="mailto:info@email.com">Submit</a></button>
+        <form action="contact">
+            <input type="text" name="name" id="name" placeholder="Name" aria-label="name">
+                
+            <input type="email" name="email" id="email" placeholder="Email" aria-label="email">
+
+            <textarea name="Comment" id="Comment" placeholder="Message" aria-label="comment" cols="30" rows="10"></textarea>
+
+            <button>Submit</button>
+
         </form>
     </main> 
     <footer>

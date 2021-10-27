@@ -11,8 +11,8 @@
     <title>BLOG</title>
 </head>
 <body>
-    <header>
-        <nav class="header-nav">
+    <header class="blog-header">
+        <nav class="header-nav wrapper">
             <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="about.html">about</a></li>
@@ -20,59 +20,70 @@
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
+        <h2>Blog</h2>
     </header>
 
-    <main>
+    <main class="blog-main ">
         <aside>
             <img src="./images/side-blog-image.jpg" alt="lens being tossed in the air">
+
             <div class="blog-sidebar">
+                
                 <h4>About Captured</h4>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil consequuntur quod, eius incidunt quibusdam necessitatibus repellendus reprehenderit veritatis praesentium porro fuga.<a href="about.html">Find out more</a></p>
-               <div></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil consequuntur quod, eius incidunt. <a href="about.html">Find out more.</a></p>
+            
                 <h4>Recent Posts</h4>
                 <ul>
                     <li>Donec facislsis tortur ut</li>
                     <li>Augue lacina at viverra</li>
                     <li>Semper sed sapien metus</li>
-                    <li>sceleisque nec pharetra id</li>
+                    <li>Sceleisque nec pharetra id</li>
                 </ul>
+                
             </div>
         </aside>
 
         <section class="blog-post">
+            <img src="./images/blog-post-image.jpg" alt="blonde woman taking picture of a meadow" class="blog-content-image">
+            <div class="post-content">
             <h2>Finding Great Locations</h2>
-            <p>Monday May 4th, 2019 by Dieula</p>
+            <p class="date">Monday May 4th, 2019 by Dieula</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia aliquam laudantium. Ea, soluta officia! A esse recusandae earum alias inventore enim distinctio sit quasi, neque fugit assumenda architecto eveniet.
             Earum in ipsum odio deserunt rerum facilis quibusdam ratione recusandae, ducimus sunt, illo doloribus laudantium blanditiis. Temporibus necessitatibus quibusdam facere, voluptatibus nemo ipsam eveniet harum molestias possimus ut magni mollitia!
             Laboriosam odio eos architecto voluptas quibusdam. Unde totam impedit quos nemo sint. Officia, quaerat rem? Iure harum amet aut aliquam, ab, aperiam voluptas quae sapiente minus laboriosam quisquam ducimus ipsum?
             Eos officia facere a eum ipsum sapiente quas commodi, itaque distinctio, consectetur quia qui expedita doloribus facilis fugit nesciunt repudiandae omnis praesentium possimus molestias odit optio sed, exercitationem iste. Officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, repellendus odit. Aliquam ipsa modi suscipit consequuntur, libero iste! Inventore sint quod laboriosam dolorem libero fugiat delectus minus mollitia facilis ea?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda nisi dolores cupiditate labore! Voluptatibus, corporis voluptates. Beatae dolores architecto deserunt recusandae ipsum animi voluptas quos, perspiciatis earum, inventore, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium placeat labore, tempora mollitia voluptatibus quisquam deserunt! Voluptates quos tenetur commodi repellendus vitae ex nisi non! Harum repellendus veritatis magni possimus.
             Culpa nesciunt repellendus consectetur voluptas saepe ipsam aliquam nihil laborum, repellat eius minima numquam exercitationem repudiandae voluptate necessitatibus alias, tenetur nulla, ullam amet commodi quia! Molestiae nihil dolor at doloremque?</p>
-        </section>
+            </div>
 
-        <section class="comments wrapper">
-            <h3>Comments</h3>
-            <div>
-                <img src="./images/comment-1.jpg" alt="man wearing a hat">
-                <div class="comment-text">
-                    <p>Tuesday October 9th, 2018 by Jeremy</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto incidunt placeat rerum. Dolorum porro atque culpa enim molestias cumque nam ipsam saepe laborum sed vel molestiae ad, unde quidem corporis?</p>
+            <div >
+                <h3>Comments</h3>
+                <div class="comments">
+                    <img src="./images/comment-1.jpg" alt="man wearing a hat">
+                    <div class="comment-text">
+                        <p>Tuesday October 9th, 2018 by Jeremy</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto incidunt placeat rerum. Dolorum porro atque culpa enim molestias cumque nam ipsam saepe laborum sed vel molestiae ad, unde quidem corporis?</p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <img src="./images/comment-2.jpg" alt="blonde woman smiling">
+                    <div class="comment-text">
+                        <p>Wednesday October 10th, 2018 by Julia</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto incidunt placeat rerum. Dolorum porro atque culpa enim molestias cumque nam ipsam saepe laborum sed vel molestiae ad, unde quidem corporis?</p>
+                    </div>
                 </div>
             </div>
-            <div class="comment-text">
-                <img src="./images/comment-2.jpg" alt="blonde woman smiling">
-                <div class="comment-text">
-                    <p>Wednesday October 10th, 2018 by Julia</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto incidunt placeat rerum. Dolorum porro atque culpa enim molestias cumque nam ipsam saepe laborum sed vel molestiae ad, unde quidem corporis?</p>
-                </div>
-            </div>
-        </section>
 
-        <form action="">
-            <input type="text" name="name" id="name">
-            <input type="email" name="email" id="email">
-            <textarea name="Commect" id="Comment" cols="30" rows="10"></textarea>
-            <button>Post Comment</button>
-        </form>
+            <form action="comment">
+            
+                <input type="text" name="name" id="name" placeholder="Name" aria-label="name">
+                
+                <input type="email" name="email" id="email" placeholder="Email" aria-label="email">
+
+                <textarea name="Comment" id="Comment" placeholder="Comment" aria-label="comment" cols="30" rows="10"></textarea>
+
+                <button>Post Comment</button>
+            </form>
+        </section>
     </main>
 
     <footer>

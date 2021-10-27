@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -252,6 +253,7 @@ nav ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 0;
+  padding-top: 35px;
 }
 nav ul li {
   padding: 10px 40px;
@@ -270,7 +272,6 @@ nav ul a:hover, nav ul a:focus, nav ul a:focus-within {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 35px;
   height: 800px;
   width: 100%;
   position: relative;
@@ -288,6 +289,43 @@ nav ul a:hover, nav ul a:focus, nav ul a:focus-within {
   z-index: 10;
   bottom: 0;
   right: 25%;
+}
+
+.blog-header {
+  background-image: url(../images/blog-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.blog-header h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contact-header {
+  background-image: url(../images/contact-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.contact-header h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.about-header {
+  background-image: url(../images/about-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.about-header h2 {
+  text-align: center;
+  padding-top: 100px;
+  margin-left: 200px;
 }
 
 footer {
@@ -354,7 +392,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 7.5rem;
   color: #2C2C2C;
   font-family: "Playfair Display", serif;
   font-weight: 600;
@@ -370,14 +408,14 @@ h3 {
 }
 
 h4 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   color: #2C2C2C;
   font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
-/*Home Page Styles*/
+/*HOME PAGE STYLES*/
 .about {
   background-color: #EFFDF3;
   padding-top: 200px;
@@ -537,4 +575,283 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 0;
+}
+
+/*BLOG PAGE STYLES*/
+.blog-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  background-color: #EFFDF3;
+}
+
+aside img {
+  position: relative;
+  z-index: 10;
+}
+
+.blog-sidebar {
+  background-color: #FAFAFA;
+  margin-left: 100px;
+  padding: 20px;
+  padding-top: 350px;
+  position: relative;
+  top: -400px;
+  left: 15px;
+}
+.blog-sidebar a {
+  font-weight: 600;
+  font-style: italic;
+}
+.blog-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.blog-sidebar li {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+.blog-sidebar li::before {
+  content: "•";
+  color: #4CEEA7;
+  padding-right: 15px;
+  font-size: 2rem;
+}
+.blog-sidebar h4 {
+  margin-top: 80px;
+}
+
+.blog-post {
+  margin-left: 150px;
+  position: relative;
+  top: -350px;
+}
+
+.post-content {
+  padding-left: 30px;
+  margin-left: -30px;
+  border-left: 5px solid #FDFA69;
+  border-bottom: 5px solid #FDFA69;
+  margin-right: 100px;
+}
+.post-content h2 {
+  padding-top: 60px;
+  margin: 0;
+}
+
+.date {
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+.blog-content-image {
+  width: 100%;
+  background-color: transparent;
+  -webkit-box-shadow: -30px 30px #FDFA69;
+          box-shadow: -30px 30px #FDFA69;
+  margin-right: 30px;
+}
+
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 80px;
+}
+.comments img {
+  width: 100px;
+  height: 100px;
+}
+.comments p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.comment-text {
+  padding-right: 100px;
+  padding-left: 30px;
+  padding-top: 0;
+}
+
+.blog-main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 100px;
+}
+.blog-main form input {
+  width: calc(50% - 30px/2);
+  border: none;
+  border-bottom: 2px solid #4CEEA7;
+  background-color: #EFFDF3;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.blog-main form input::-webkit-input-placeholder, .blog-main form textarea::-webkit-input-placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.blog-main form input::-moz-placeholder, .blog-main form textarea::-moz-placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.blog-main form input:-ms-input-placeholder, .blog-main form textarea:-ms-input-placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.blog-main form input::-ms-input-placeholder, .blog-main form textarea::-ms-input-placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.blog-main form input::placeholder,
+.blog-main form textarea::placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.blog-main form input#email {
+  margin-left: 30px;
+}
+.blog-main form textarea {
+  width: 100%;
+  font-size: 2rem;
+  padding: 15px;
+  border: none;
+  border: 2px solid #4CEEA7;
+  background-color: #EFFDF3;
+  resize: none;
+}
+.blog-main form button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/*CONTACT PAGE STYLES*/
+.contact-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+  padding-left: 150px;
+  background-color: #EFFDF3;
+}
+.contact-main aside {
+  margin-right: 175px;
+  white-space: nowrap;
+}
+.contact-main aside ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0;
+}
+.contact-main aside li {
+  font-size: 2rem;
+  padding-right: 20px;
+}
+.contact-main aside p {
+  margin: 0;
+  overflow: hidden;
+}
+
+.contact-main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px;
+  background-color: #FAFAFA;
+  -webkit-box-shadow: -30px 30px #FDFA69;
+          box-shadow: -30px 30px #FDFA69;
+  position: relative;
+  top: -300px;
+}
+.contact-main form input {
+  width: calc(50% - 30px/2);
+  border: none;
+  border-bottom: 2px solid #4CEEA7;
+  background-color: #FAFAFA;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.contact-main form input::-webkit-input-placeholder, .contact-main form textarea::-webkit-input-placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.contact-main form input::-moz-placeholder, .contact-main form textarea::-moz-placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.contact-main form input:-ms-input-placeholder, .contact-main form textarea:-ms-input-placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.contact-main form input::-ms-input-placeholder, .contact-main form textarea::-ms-input-placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.contact-main form input::placeholder,
+.contact-main form textarea::placeholder {
+  color: #2c2c2c;
+  opacity: 1;
+}
+.contact-main form input#email {
+  margin-left: 30px;
+}
+.contact-main form textarea {
+  width: 100%;
+  font-size: 2rem;
+  padding: 15px;
+  border: none;
+  border: 2px solid #4CEEA7;
+  background-color: #FAFAFA;
+  resize: none;
+}
+.contact-main form button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/*BONUS ABOUT PAGE STYLES*/
+.about-main {
+  background-color: #EFFDF3;
+  margin: 0;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 5px solid #FDFA69;
+}
+.about-main img {
+  position: relative;
+  top: -300px;
+  -webkit-box-shadow: 30px -30px #FDFA69;
+          box-shadow: 30px -30px #FDFA69;
+  padding: 0;
+  margin: 0;
+}
+.about-main .about-text {
+  padding-left: 100px;
+}
+.about-main h4 {
+  margin: 0;
+  padding-bottom: 50px;
+}
+.about-main p {
+  margin: 0;
+  padding-bottom: 30px;
+}
+.about-main p:nth-of-type(2) {
+  font-size: 1rem;
 }

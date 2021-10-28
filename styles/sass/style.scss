@@ -832,11 +832,187 @@ aside img{
         margin-top:-200px;
     }
 
+    //BLOG
 
+    .blog-post{
+        margin:0;
+        padding:40px;
+
+        img{
+            top:-250;
+        }
+
+        p{
+            padding:0px;
+            font-size:1.75rem;
+        }
+    }
+
+    .post-content{
+        margin-right:0;
+    }
+
+    .comment-text{
+        padding-right:0;
+    }
+
+    .blog-main{
+
+        form{
+            padding-right:0;
+        }
+
+        aside{
+            img{
+                width:100%;
+            }
+        }
+    }
+
+    //CONTACT
+
+    .contact-main{
+        padding:0;
+
+        form{
+            input{
+                width:100%;
+                
+            }
+
+            input#email{
+                margin-left:0;
+            }
+        }
+
+        aside{
+            margin-bottom:50px;
+        }
+    }
 
 }
 
 /* Smallest phones */
-@media (max-width:320px) {
+@media (min-width:320px) and (max-width:400px) {
 
-}
+    h2{
+        font-size:3rem;
+    }
+
+    h3{
+        font-size:2.7rem;
+    }
+
+    p{
+        font-size:1.5rem;
+    }
+
+    .header-nav{
+        ul{
+            font-size:2rem;
+            padding:0;
+            padding-top:80px;
+            padding-bottom:40px;
+        }
+    }
+
+    .header-nav ul::after{
+        font-size:1.8rem;
+        padding-bottom:20px;
+    }
+
+    //HOME
+    .home-header{
+        height:270px;
+
+        h1{
+            bottom:2%;
+            right:12%;
+            font-size:4.5rem;
+        }
+    }
+
+    .about {
+
+        p{
+            font-size:1.5rem;
+        }
+    }
+
+    .unlock{
+        img{
+            margin-right:0;
+        }
+
+        p{
+            margin-right:0;
+        }
+    }
+
+    .new-gear{
+
+        img{
+            right:0;
+            left:0;
+            margin-left:0;
+            box-shadow: 30px 30px $accent-color;
+        }
+    }
+    .profile-text{
+        padding:30px;
+    }
+
+
+    //ABOUT
+
+
+    //BLOG
+    .blog-header{
+        height:270px;
+    }
+ 
+    .blog-main{
+        form{
+            input{
+                width:100%;
+                
+            }
+
+            input#email{
+                margin-left:0;
+            }
+        }
+    }
+    .blog-post{
+        top:-250px;
+    }
+        //CONTACT
+        .contact-main{
+
+            aside{
+                margin-top:-333px;
+            }
+            form{
+
+                padding:10px;
+                top:-415px;
+
+                input, textarea{
+                    font-size:1.3rem;
+                }
+            }
+        }
+        .comments{
+            flex-wrap:wrap;
+            justify-content:center;
+
+            img{
+                margin-bottom:30px;
+            }
+        }
+
+
+
+    
+
+}    

@@ -1134,5 +1134,139 @@ aside img {
   .about-text {
     margin-top: -200px;
   }
+
+  .blog-post {
+    margin: 0;
+    padding: 40px;
+  }
+  .blog-post img {
+    top: -250;
+  }
+  .blog-post p {
+    padding: 0px;
+    font-size: 1.75rem;
+  }
+
+  .post-content {
+    margin-right: 0;
+  }
+
+  .comment-text {
+    padding-right: 0;
+  }
+
+  .blog-main form {
+    padding-right: 0;
+  }
+  .blog-main aside img {
+    width: 100%;
+  }
+
+  .contact-main {
+    padding: 0;
+  }
+  .contact-main form input {
+    width: 100%;
+  }
+  .contact-main form input#email {
+    margin-left: 0;
+  }
+  .contact-main aside {
+    margin-bottom: 50px;
+  }
 }
 /* Smallest phones */
+@media (min-width: 320px) and (max-width: 400px) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.7rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .header-nav ul {
+    font-size: 2rem;
+    padding: 0;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .header-nav ul::after {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+  }
+
+  .home-header {
+    height: 270px;
+  }
+  .home-header h1 {
+    bottom: 2%;
+    right: 12%;
+    font-size: 4.5rem;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+  }
+
+  .unlock img {
+    margin-right: 0;
+  }
+  .unlock p {
+    margin-right: 0;
+  }
+
+  .new-gear img {
+    right: 0;
+    left: 0;
+    margin-left: 0;
+    -webkit-box-shadow: 30px 30px #FDFA69;
+            box-shadow: 30px 30px #FDFA69;
+  }
+
+  .profile-text {
+    padding: 30px;
+  }
+
+  .blog-header {
+    height: 270px;
+  }
+
+  .blog-main form input {
+    width: 100%;
+  }
+  .blog-main form input#email {
+    margin-left: 0;
+  }
+
+  .blog-post {
+    top: -250px;
+  }
+
+  .contact-main aside {
+    margin-top: -333px;
+  }
+  .contact-main form {
+    padding: 10px;
+    top: -415px;
+  }
+  .contact-main form input, .contact-main form textarea {
+    font-size: 1.3rem;
+  }
+
+  .comments {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .comments img {
+    margin-bottom: 30px;
+  }
+}

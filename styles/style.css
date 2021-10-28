@@ -241,6 +241,12 @@ html {
 /*white*/
 /*canary*/
 /*sea green*/
+input[type=checkbox],
+label[for=toggle] {
+  opacity: 0;
+  float: left;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1045,12 +1051,8 @@ aside img {
     border-bottom: 5px solid #FAFAFA;
   }
 
-  input[type=checkbox] {
-    opacity: 0;
-    float: left;
-  }
-
   label[for=toggle] {
+    opacity: 1;
     color: #2c2c2c;
     font-size: 7.6rem;
     position: absolute;

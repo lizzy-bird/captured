@@ -689,6 +689,8 @@ aside img{
     .header-nav{
         margin:0;
         display:none;
+
+        
         
         ul{
         display:block;
@@ -718,12 +720,10 @@ aside img{
         }
     }
 
-    input[type="checkbox"]{
-        opacity:0;
-        float:left;
-    }
-
+    
+    
     label[for="toggle"]{
+        opacity:1;
         color:#2c2c2c;
         font-size:7.6rem;
         position:absolute;

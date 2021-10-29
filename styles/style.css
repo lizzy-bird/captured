@@ -236,11 +236,6 @@ html {
   overflow: hidden;
 }
 
-/*Colors*/
-/*ice*/
-/*white*/
-/*canary*/
-/*sea green*/
 input[type=checkbox],
 label[for=toggle] {
   opacity: 0;
